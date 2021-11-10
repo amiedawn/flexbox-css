@@ -2,42 +2,148 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Block Inline CSS</title>
-  
-  <link rel="stylesheet" href="style.css">
-</head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Bootstrap Dashboard</title>
+</head>
 
-<div class="flex-container">
-  <div class="green-block">GREEN</div>
-    <div class="inner-container">
-  
-      <div class="yellow-block">
-        <div class="block-title">YELLOW</div>
-        <div class="numbers">1</div>
-        <div class="numbers">2</div>
-        <div class="numbers">3</div>
-        <div class="numbers">4</div>
-      </div>  
-
-      <div class="red-block">
-        <div class="block-title">RED</div>
-        <div class="numbers">A</div>
-        <div class="numbers">B</div>
-        <div class="numbers">C</div>
-        <div class="numbers">D</div>
-      </div>
-
-      <div class="orange-block">ORANGE</div>
+<body>
+<!-- navbar start -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">LOGO</a>
     </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active">
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+        <a href="#">About Us</a>
+      </li>
+      <li>
+        <a href="#">Messages <span class="label label-success">12</span></a>
+      </li>
+    </ul>   
+  </div>
+</nav>
+<!-- navbar end -->
 
-  <div class="blue-block">BLUE</div>
-  
+<div class="container-fluid border border-light">
+  <!-- zebra table start -->
+  <div class="container">
+    <h1><b>Dashboard:</b></h1>    
+    <hr>         
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Team</th>
+          <th>All Star</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Steph</td>
+          <td>Warriors</td>
+          <td>Yes</td>
+          <td>
+            <a href="#" class="btn btn-danger btn-xs">
+              <span class="glyphicon glyphicon-remove-sign"></span>
+            </a>
+          </td>  
+        </tr>
+        <tr>
+          <td>Lebron</td>
+          <td>Cavaliers</td>
+          <td>Yes</td>
+          <td>
+            <a href="#" class="btn btn-danger btn-xs">
+              <span class="glyphicon glyphicon-remove-sign"></span>
+            </a>
+          </td> 
+        </tr>
+        <tr>
+          <td>Dwayne</td>
+          <td>Heat</td>
+          <td>Yes</td>
+          <td>
+            <a href="#" class="btn btn-danger btn-xs">
+              <span class="glyphicon glyphicon-remove-sign"></span>
+            </a>
+          </td> 
+        </tr>
+        <tr>
+          <td>Kobe</td>
+          <td>Lakers</td>
+          <td>
+            Yes
+            <span class="label label-warning text-dark">Last</span>
+          </td>
+          <td>
+            <a href="#" class="btn btn-danger btn-xs">
+              <span class="glyphicon glyphicon-remove-sign"></span>
+            </a>
+          </td> 
+        </tr>
+        <tr>
+          <td>Isaiah</td>
+          <td>Celtics</td>
+          <td>
+            Yes
+            <span class="label label-success">First</span>
+          </td>
+          <td>
+            <a href="#" class="btn btn-danger btn-xs ">
+              <span class="glyphicon glyphicon-remove-sign"></span>
+            </a>
+          </td> 
+        </tr>
+      </tbody>
+    </table>
+  </div>  
+  <!-- zebra table end -->
+  <hr>
 
-  
-  
+  <!-- contextual classes table start -->
+  <div class="container">
+    <h2><b>Todos:</b></h2>
+    <table class="table">
+      <tbody>
+        <tr class="success">
+          <td class="text-success">Feel good about Bootstrap</td>
+        </tr>  
+        <tr class="info">
+          <td class="text-info">Feel informed about Bootstrap</td>
+        </tr>
+        <tr class="warning">
+          <td class="text-warning">Feel warned about Bootstrap</td>
+        </tr>
+          <tr class="warning">
+          <td class="text-warning">Maybe I should read the docs...</td>
+        </tr>
+        <tr class="danger">
+          <td class="text-danger">Danger zone</td>
+        </tr>
+        <tr class="danger">
+          <td class="text-danger">I really should read the docs...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- contextual classes table end -->
 </div>
-</div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
 </html>
