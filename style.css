@@ -7,8 +7,8 @@
   flex-wrap: wrap;
   gap: 2em;
   background-color: white;
-  flex: 1;
-  /* padding: 25px; */
+  width: 100%;
+  padding: 25px;
 }
 
 .item-green {
@@ -23,71 +23,56 @@
   display: flex;
   flex-wrap: wrap;
   flex-basis: 65%;
-  row-gap: 1em;
+  gap: 2em;
 }
 
-.sub-container {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 1em;
-  justify-content: space-between;
-  flex-basis: 50%;
-}
-
-div.item-yellow ~ div, div.item-red ~ div {
-  background-color: white;
-  padding: 1em 1.5em;
-  flex-basis: 40%;
-}
-
-.yellow-title {
-  margin-top: 40px;
+.box {
+  flex: 1;
 }
 
 .item-yellow {
   background-color: yellow;
   padding-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1em;
+  justify-content: space-between;
+  width: 50%
 }
 
-.item-1 {
-  background-color: white;
-  width: 55px;
-  height: 35px;
-  margin: 20px;
-  text-align: center;
-}
+.sub-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  row-gap: 1em;
+  justify-content: space-between;
+ }
 
-.item-2{
-  background-color: white;
-  width: 55px;
-  height: 35px;
-  margin: 20px;
-  text-align: center;
-}
-
-.item-3 {
-  background-color: white;
-  width: 55px;
-  height: 35px;
-  margin: 20px;
-  text-align: center;
-}
-
-.item-4 {
-  background-color: white;
-  width: 55px;
-  height: 35px;
-  margin: 20px;
-  text-align: center;
-}
-
-.red-title {
+.yellow-title, .red-title {
   margin-top: 40px;
+}
+
+.item-1, .item-2, .item-3, .item-4  {
+  width: 3em;
+  height: 3em;
+  margin: 10px;
+  text-align: left;
+}
+
+.item {
+  background-color: white;
+  padding: 1em 1.5em;
+  flex-basis: 40%;
 }
 
 .item-red {
   background-color: lightsalmon;
   padding-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1em;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .item-orange {
@@ -96,11 +81,11 @@ div.item-yellow ~ div, div.item-red ~ div {
   height: 100px;
   line-height: 100px;
   padding-left: 25px;
+  display: block;
 }
 
 .item-blue {
   background-color: lightskyblue;
-  flex: 1;
   padding-left: 25px;
   padding-top: 40px;
 }
