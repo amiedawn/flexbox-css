@@ -4,33 +4,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grid CSS</title>
+  <title>Flexbox CSS</title>
   
   <link rel="stylesheet" href="style.css">
 </head> 
 
 
-  <div class="grid-container">
+  <div class="flex-container">
     <div class="item-green">GREEN</div>
 
-      <div class="inner-grid-container item-yellow">
-        <div class="yellow-title">YELLOW</div>
-        <div class="item-1">1</div>
-        <div class="item-2">2</div>
-        <div class="item-3">3</div>
-        <div class="item-4">4</div>
-      </div>  
+      <div class="container">
+        <div class="sub-container">
+          <div class="item-yellow">
+            <div class="yellow-title">YELLOW</div>
+            <div class="item-1">1</div>
+            <div class="item-2">2</div>
+            <div class="item-3">3</div>
+            <div class="item-4">4</div>
+          </div> 
+        </div>
 
-      <div class="inner-grid-container item-red">
-        <div class="red-title">RED</div>
-        <div class="item-1">A</div>
-        <div class="item-2">B</div>
-        <div class="item-3">C</div>
-        <div class="item-4">D</div>
-      </div> 
+        <div class="sub-container">        
+          <div class="item-red">
+            <div class="red-title">RED</div>
+            <div class="item-1">A</div>
+            <div class="item-2">B</div>
+            <div class="item-3">C</div>
+            <div class="item-4">D</div>
+          </div> 
+        </div>  
+      
+        <div class="item-orange">ORANGE</div>
+      </div>     
 
       <div class="item-blue">BLUE</div>
-    <div class="item-orange">ORANGE</div>
+   
     </div>  
   </div>  
 
